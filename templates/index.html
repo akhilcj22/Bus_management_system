@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Add custom CSS styles */
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: calc(100% - 0px); /* Adjust the width based on your design */
+            padding: 10px; /* Add padding */
+            margin-bottom: 10px; /* Add margin to separate the fields */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div class="logo">
+            <h1>--- ON THE WAY ---</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li> <!-- Link to the About page -->
+                <li><a href="/feedback">FEEDBACK</a></li> <!-- Link to the Feedback page -->
+                <li><a href="/owner">OWNER</a></li>
+                <li><a href="/contact">CONTACT</a></li> <!-- Link to the Contact page -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="main-content">
+        </div>
+        <div class="login-box">
+            <h2>Login Here</h2>
+            <form action="/login" method="post">
+                <input type="text" placeholder="Enter Username Here" name="username" required> <!-- Change type to "text" and name to "username" -->
+                <input type="password" placeholder="Enter Password Here" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p> <!-- Link to the registration page -->
+            <p>Forgot your password? <a href="{{ url_for('reset_password') }}">Click here</a></p> 
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

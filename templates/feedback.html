@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Feedback</h1>
+    </header>
+    
+    <div class="content">
+        <p>Provide us with your valuable feedback here.</p>
+        <form action="/submit_feedback" method="post">
+            <textarea name="feedback" rows="4" cols="50" placeholder="Enter your feedback here"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+</div>
+
+</body>
+</html>

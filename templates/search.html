@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bus Timings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='search_styles.css') }}">
+</head>
+<body>
+    <h1>Search Bus Timings</h1>
+    <form action="{{ url_for('search_results') }}" method="post">
+        <label for="current_location">Current Location:</label>
+        <input type="text" id="current_location" name="current_location"><br><br>
+        <label for="desired_location">Desired Location:</label>
+        <input type="text" id="desired_location" name="desired_location"><br><br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

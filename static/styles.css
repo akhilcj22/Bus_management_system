@@ -1,0 +1,171 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('new.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navigation {
+    margin-top: 20px; /* Add margin to create space between the header and navigation */
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Align the navigation to the right */
+}
+
+.navigation li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navigation li:first-child {
+    margin-left: 0;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #fff; /* Change color to white */
+}
+
+/* Style for navigation links */
+.navigation li a:hover {
+    color: #ccc; /* Change hover color */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-content {
+    width: 60%;
+}
+
+.main-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-box form input[type="email"],
+.login-box form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.login-box form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3e3e3e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-box form button:hover {
+    background-color: #555;
+}
+
+.join-btn {
+    padding: 10px 20px;
+    background-color: #3e3e3e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.join-btn:hover {
+    background-color: #555;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Align elements horizontally */
+    align-items: flex-start; /* Align elements to the top */
+}
+
+.text-section {
+    width: 45%; /* Set width of text section */
+    padding: 20px;
+}
+
+.register-section {
+    width: 35%; /* Set width of register section */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+}
+
+.register-section h1 {
+    text-align: center;
+}
+
+.register-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-section form label {
+    margin-bottom: 10px;
+}
+
+.register-section form input[type="email"],
+.register-section form input[type="password"] {
+    width: 100%-0px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.register-section form input[type="submit"] {
+    width: 100% -0px;
+    padding: 10px;
+    background-color: #3e3e3e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.register-section form input[type="submit"]:hover {
+    background-color: #555;
+}

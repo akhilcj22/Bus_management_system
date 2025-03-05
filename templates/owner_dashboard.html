@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Dashboard</title>
+    <link rel="stylesheet" href="design.css"> <!-- Ensure correct path to design.css -->
+</head>
+<body>
+    {% if bus_details %}
+        <h1>Welcome to Owner Dashboard</h1>
+        <h2>Bus Details:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bus Name</th>
+                    <th>Destination</th>
+                    <th>Time</th>
+                    <th>Departure from</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for bus in bus_details %}
+                <tr>
+                    <td>{{ bus['bus_name'] }}</td>
+                    <td>{{ bus['destination'] }}</td>
+                    <td>{{ bus['time'] }}</td>
+                    <td>{{ bus['departure_from'] }}</td> <!-- Use 'departure_from' instead of 'departure from' -->
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No bus details available.</p>
+    {% endif %}
+</body>
+</html>

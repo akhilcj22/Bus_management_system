@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='owner_styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form action="/owner_login" method="POST">
+            <h1 style="font-size: 28px;">Owner Login</h1>
+            <input type="text" name="username" placeholder="Enter Username" required><br>
+            <input type="password" name="password" placeholder="Enter Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/owner_dashboard">Owner Dashboard</a></li>
+            </ul>
+        </nav>
+        <div class="register-box">
+            <p>Don't have an account? <a href="{{ url_for('owner_register') }}">Register</a></p>
+        </div>
+    </div>
+</body>
+</html>
